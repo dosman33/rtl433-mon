@@ -1,5 +1,5 @@
 # rtl433-mon
-![HTML formatted rtl_433 log](/dosman33/rtl433-mon/blob/master/rtl433-mon_html.jpg)
+![HTML formatted rtl_433 log](/rtl433-mon_html.jpg)
 
 # What is this?
 
