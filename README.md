@@ -1,3 +1,6 @@
+# rtl433-mon
+![HTML formatted rtl_433 log](/dosman33/rtl433-mon/blob/master/rtl433-mon_html.jpg)
+
 # What is this?
 
 If you have an rtl_433 rig running somewhere with interesting signals showing up every day, this is a fun way to keep up with the activity in your vicinity. This is a set of scripts for doing simple logging, HTML-ifying, and some very simple state monitoring of rtl_433 data. It's not intended to be a heavy hitting Graphana/full stack deal, just some simple Unix shell scripts to easily keep an eye on what data your rtl_433 rig is pulling in every day, along with automatic daily log rotation.
