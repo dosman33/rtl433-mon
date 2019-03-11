@@ -19,7 +19,7 @@ This is not working yet, still being developed. It creates a state database of s
 
 
 ## Environment
-My environment is an RPi3 with a Nooelec RTLSDR, these scripts are rather generic unix fare so they should work on any similar environement. It's assumed you will be running Apache2 or a similar web server for serving the html output files. You'll need to make port 80 or 443 open to your web client somehow. An ssh tunnel works well if you are running on an RPi and don't want to open it up to the world.
+My environment is an RPi3 with a Nooelec RTL-SDR hooked up to an outdoor discone antenna using high quality LMR400 coax. The discone feeds a number of projects, this is just one of several hooked up to it for now. These scripts are rather generic unix fare so they should work on any similar environement. It's assumed you will be running Apache2 or a similar web server for serving the html output files. You'll need to make port 80 or 443 open to your web client somehow. An ssh tunnel works well if you are running on an RPi and don't want to open it up to the world.
 
 
 ## Installation
