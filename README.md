@@ -26,7 +26,7 @@ My environment is an RPi3 with a Nooelec RTLSDR, these scripts are rather generi
 You will need rtl_433 installed and working from here: https://github.com/merbanan/rtl_433
 
 These scripts:
-Download them somewhere. Each script has internal comments on recommended cron settings. You'll need to setup some directories under your webroot. Assuming your're not running these scripts as root (please just don't) you'll also need the permission changes:
+Download them somewhere. Each script has internal comments on recommended cron settings. You'll need to setup some directories under your webroot. Assuming your're not running these scripts as root (please just don't) you'll also need to make some permission changes:
 ```
 apt-get update; apt-get install apache2
 mkdir -p /var/www/html/rtl433/csv
