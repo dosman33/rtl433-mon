@@ -181,27 +181,27 @@ $COLUMNREDUCE $INPUT > $TMP1
 htmlHeader > $HTMLOUT
 
 # uniq to filter out repeated tx packets which is common
+COUNT=1
 for line in `cat $TMP1 | uniq | tr " " "~"`;do
-	COUNT=1
 	# have to stick the dash in every field so we can pad out empty columns correctly
 	for col in `echo $line | sed "s/,/-\n/g"`;do
 		# Parse the header row differently from the data rows
 		if [[ $COUNT == 1 ]];then
 			# header row
 			mycol=`printf "$col" | sed "s/-$//g"`
-			printf "<th><bold>$mycol</bold></th>" | tr "~" " " >> $HTMLOUT
+			printf "<th><B>$mycol</B></th>" | tr "~" " " >> $HTMLOUT
 		else
 			# data rows
 			if [[ $col == "-" ]];then
-				printf "<th> </th>" >> $HTMLOUT
+				printf "<td> </td>" >> $HTMLOUT
 			else
 				mycol=`echo "$col" | sed "s/-$//g" | tr -d "\n"`
-				printf "<th>$mycol</th>" | tr "~" " " >> $HTMLOUT
+				printf "<td nowrap>$mycol</td>" | tr "~" " " >> $HTMLOUT
 			fi
 		fi
-		COUNT=2
 	done
 	echo "</tr>" >> $HTMLOUT
+	COUNT=2
 done
 htmlFooter >> $HTMLOUT
 
