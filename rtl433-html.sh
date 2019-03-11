@@ -1,5 +1,6 @@
 #!/bin/bash
 # 2019-03-07 / dosman / Parse rtl_433 csv files into html viewable/navigable output
+# https://github.com/dosman33/rtl433-mon
 #
 # Call from cron like this:
 #0,10,20,30,40,50 * * * * /home/pi/bin/rtl433-html.sh /var/www/html/rtl433/csv/$(/bin/date +\%Y\%m\%d)_rtl.log
