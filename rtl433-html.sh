@@ -51,6 +51,9 @@ fi
 # If you are calling this from cron every 10 mins, and if you end up with a long log that takes 
 # longer than 10mins to process, the script can backup and start bogging the box down with multiple
 # instances running. Avoid this situation if possible.
+if [[ $INPUT == "/tmp" ]];then
+	sleep 360
+fi
 RUNCOUNT=`ps -ef | grep $0 | grep -v "grep" | wc -l`
 if [[ $RUNCOUNT -gt 2 ]];then
 	# script already running, abort
